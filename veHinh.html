@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let n = +prompt('Mời bạn nhập cạnh của tam giác: ');
+        for (let i = 0; i < n; i++) {
+            let html = "";
+            for (let j = 0; j < n; j++) {
+                if (i === 0 || j === 0 || i + j === n - 1) {
+                    html += " * ";
+                } else {
+                    html += "   ";
+                }
+            }
+            console.log(`${html}`);
+        }
+        for (let i = n; i >= 0; i--) {
+            let b = "";
+            for (let j = 0; j <= i; j++) {
+                b += " * ";
+            }
+            console.log(b);
+        }
+        for (let i = 0; i < n; i++) {
+            let a = "";
+            for (let j = 0; j < n; j++) {
+                if (i === 0 || i === n - 1 || j === 0 || j === n - 1) {
+                    a += " * ";
+                }
+                else {
+                    a += "   ";
+                }
+            }
+            console.log(`${a}`);
+
+        }
+    </script>
+</body>
+
+</html>

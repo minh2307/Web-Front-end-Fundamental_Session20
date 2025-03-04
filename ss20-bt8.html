@@ -20,6 +20,7 @@
                 for (let j = 1; j <= Math.sqrt(i); j++) {
                     if (i % j === 0) {
                         flag++;
+                        if (j !== i / j) flag++;
                     }
                 }
                 if (flag === 2) {
