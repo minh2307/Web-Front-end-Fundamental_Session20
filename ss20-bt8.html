@@ -13,18 +13,23 @@
         if (num < 0 || isNaN(num)) {
             console.log('không hợp lệ');
         } else {
-            for (let i = 2; i <= num; i++) {
+            let count = 0;
+            let i = 2;
+            while (count < num) {
                 let flag = 0;
-                for (let j = 1; j <= i; j++) {
+                for (let j = 1; j <= Math.sqrt(i); j++) {
                     if (i % j === 0) {
                         flag++;
                     }
                 }
                 if (flag === 2) {
                     console.log(i);
+                    count++;
                 }
+                i++;
             }
         }
+
 
     </script>
 </body>
