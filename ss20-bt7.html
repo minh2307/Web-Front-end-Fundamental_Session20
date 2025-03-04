@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = +prompt("Mời bạn nhập vào n số dẫy số fibonacci: ");
+        let f1 = 1, f2 = 1, next;
+        if (num < 0 || isNaN(num)) {
+            console.log('dữ liệu nhập vào không hợp lệ');
+        } else {
+            for (let i = 1; i <= num; i++) {
+                console.log(f1);
+                next = f1 + f2;
+                f1 = f2;
+                f2 = next;
+            }
+        }
+    </script>
+</body>
+
+</html>

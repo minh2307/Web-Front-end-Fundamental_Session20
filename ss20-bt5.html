@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = +prompt("Nhập vào a: ");
+        let b = +prompt("Nhập vào b: ");
+        let product = 1;
+        for (let i = 1; i <= b; i++) {
+            product *= a;
+        }
+        if (isNaN(product)) {
+            alert(product);
+        } else {
+            alert("Không hợp lệ");
+        }
+
+    </script>
+</body>
+
+</html>
